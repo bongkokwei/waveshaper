@@ -1,0 +1,26 @@
+[build-system]
+requires      = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "waveshaper"
+version         = "0.1.0"
+description     = "Python driver for the Finisar WaveShaper 1000S (64-bit safe via 32-bit subprocess bridge)"
+readme          = "README.md"
+requires-python = ">=3.9"
+dependencies    = ["numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["waveshaper*"]
+
+[tool.setuptools.package-data]
+waveshaper = [
+    "dll/*.dll",
+    "dll/*.so",
+    "wsconfig/*.wsconfig",
+    "ws_server.py",
+]

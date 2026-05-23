@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# pytest
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# WaveShaper DLLs — do not commit binaries
+src/waveshaper/dll/*.dll
+src/waveshaper/dll/*.so
+ws.log
+
+# wsconfig files may contain device-specific calibration — optional to exclude
+# src/waveshaper/wsconfig/
+
