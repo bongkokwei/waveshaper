@@ -32,8 +32,8 @@ Thumbs.db
 Desktop.ini
 
 # WaveShaper DLLs — do not commit binaries
-src/waveshaper/dll/*.dll
-src/waveshaper/dll/*.so
+# src/waveshaper/dll/*.dll
+# src/waveshaper/dll/*.so
 ws.log
 
 # wsconfig files may contain device-specific calibration — optional to exclude
