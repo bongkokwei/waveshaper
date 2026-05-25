@@ -20,6 +20,7 @@ include = ["waveshaper*"]
 [tool.setuptools.package-data]
 waveshaper = [
     "dll/*.dll",
+    "dll64/*",
     "dll/*.so",
     "wsconfig/*.wsconfig",
     "ws_server.py",
