@@ -44,7 +44,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 # DLL location
 # ---------------------------------------------------------------------------
-_DEFAULT_DLL_DIR = Path(__file__).parent / "dll"
+_DEFAULT_DLL_DIR = Path(__file__).parent / "dll64"
 
 if sys.platform == "win32" and _DEFAULT_DLL_DIR.exists():
     os.add_dll_directory(str(_DEFAULT_DLL_DIR))
